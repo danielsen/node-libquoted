@@ -1,8 +1,14 @@
 {
   "author"          : "Dan Nielsen <dnielsen@reachmail.com>",
-  "name"            : "quoted-printable",
+  "name"            : "libquoted",
   "version"         : "1.0.0",
   "main"            : "index.js",
+  "license"         : "GNU GPL v3",
+  "keywords"        : [ "quoted-printable" ],
+  "repository"      : {
+    "type"          : "git",
+    "url"           : "git@github.com:danielsen/node-libquoted.git"
+  },
   "dependencies"    : {
     "nan"           : "^2.2.0"
   },

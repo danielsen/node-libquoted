@@ -1,10 +1,9 @@
-/*! \file quotedprintable.cpp The whole of node-quoted-printable can be found
- *                            here.
+/*! \file quotedprintable.cpp The bulk of node-libquoted can be found here.
  *
  * \mainpage
  *
  * \section synopsis Synopsis
- * This module provides simple quoted-printable encoding / deconding as 
+ * This module provides simple quoted-printable encoding / decoding as 
  * described in RFC 2045 [http://tools.ietf.org/html/rfc2045#page-19]
  *
  * \section toc Table of Contents
@@ -120,5 +119,5 @@ void InitAll (v8::Local<v8::Object> exports) {
     Nan::New<v8::FunctionTemplate>(Decode)->GetFunction());
 }
 
-NODE_MODULE(quotedprintable, InitAll)
+NODE_MODULE(libquoted, InitAll)
 
