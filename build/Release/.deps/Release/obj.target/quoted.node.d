@@ -1,1 +1,0 @@
-cmd_Release/obj.target/quoted.node := g++ -shared -pthread -rdynamic -m64  -Wl,-soname=quoted.node -o Release/obj.target/quoted.node -Wl,--start-group Release/obj.target/libquoted/src/quotedprintable.o -Wl,--end-group 
