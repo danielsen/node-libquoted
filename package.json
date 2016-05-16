@@ -3,7 +3,7 @@
   "name"            : "libquoted",
   "version"         : "1.1.0",
   "main"            : "index.js",
-  "license"         : "GNU GPL v3",
+  "license"         : "GPL-3.0",
   "keywords"        : [ "quoted-printable" ],
   "repository"      : {
     "type"          : "git",

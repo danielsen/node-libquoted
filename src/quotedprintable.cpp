@@ -98,6 +98,9 @@ void Decode (const Nan::FunctionCallbackInfo<v8::Value>& fn) {
 
   for (unsigned int j = 0; j < _input.length(); j++) {
     if (_input.at(j) == '=') {
+      if (j == _input.length() - 1) {
+        continue;
+      }
       unsigned int i = j + 1, l = i + 1;
       _output.push_back((hexVal[_input.at(i) - '0'] << 4) 
         + hexVal[_input.at(l) - '0']);
