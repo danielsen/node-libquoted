@@ -91,6 +91,14 @@ void Decode (const Nan::FunctionCallbackInfo<v8::Value>& fn) {
   std::string           _input(*_source);
   std::string           _output;
 
+  if (_input.length() == 0) {
+    _output = "";
+    v8::Local<v8::String> _return;
+    _return = Nan::New(_output).ToLocalChecked();
+    fn.GetReturnValue().Set(_return);
+    return;
+  }
+
   //                    0  1  2  3  4  5  6  7  8  9  :  ;  <  =  >  ?  @  A   
   //B   C   D   E   F
   const int hexVal[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 0, 0, 0, 0, 0, 0, 10, 

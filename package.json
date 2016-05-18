@@ -1,7 +1,7 @@
 {
   "author"          : "Dan Nielsen <dnielsen@reachmail.com>",
   "name"            : "libquoted",
-  "version"         : "1.1.1",
+  "version"         : "1.1.2",
   "main"            : "index.js",
   "license"         : "GPL-3.0",
   "keywords"        : [ "quoted-printable" ],
